@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="C:\Users\user\Desktop\YS\HTML&CSS\jquery.js">
+        </script>
+        <script>
+            $(function(){
+                $(".btn_wrap").delegate(".btn_1.on","mouseover focus",function(){
+                    alert("hello");
+                });
+                $(".btn_1").addClass("on");
+
+                $(document).one("mouseover focus",".btn_2",function(){
+                    alert("welcome");
+                });
+                $(".bnt_2").addClass("on");
+            });
+        </script>
+        </head>
+        <body>
+<div id="wrap">
+    <p class="btn_wrap"><button class="btn_1">버튼1</button></p>
+    <p><button class="btn_2">버튼2</button></p>
+</div>
+
+
+        </body>
