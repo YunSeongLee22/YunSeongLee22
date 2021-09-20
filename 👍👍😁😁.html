@@ -25,13 +25,25 @@
         <title>
             👍👍😁😁
         </title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+        type="text/javascript" 
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1b8fc4579a1a928991b2e5589e1c8f2d">
         </script>
         <script>
+           
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new kakao.maps.Map(mapContainer, mapOption); 
+
        function menu1(){
-       var menu=new Array("짜장면","마라탕","돈가스","김치찌개","회덮밥","초밥"
+       var menu=["짜장면","마라탕","돈가스","김치찌개","회덮밥","초밥"
        ,"피자","헴버거","파스타","치킨","굶기ㅋㅋ!","서브웨이","샐러드","칼국수"
-       ,"쌈밥","씨리얼","야채랑밥이랑비벼먹기","삼각김밥","라면","치킨");
+       ,"쌈밥","씨리얼","야채랑밥이랑비벼먹기","삼각김밥","라면","치킨","텐동"]
        var menuNum= Math.floor(Math.random()*menu.length);
 
        alert(menu[menuNum]);
@@ -270,7 +282,6 @@
     <button onclick ="naver()">네이버</button>
     <button onclick ="chelsea()">첼시</button>
     <button onclick ="sc()">축구무료보기</button>
-   
     
    
     <div >
@@ -492,8 +503,14 @@
 </tr>
 </table>
 </div>
+
 <div style="position:fixed; bottom : 5px; right:5px ;font-size : 30px">
-<a href="#top">⬆</a></div>
+<a href="#top"><img style ="width:50px; height:50px;" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/d/dd/Rammus_Render.png"></a></div>
+
+<!-- 지도를 표시할 div 입니다 -->
+<div id="map" style="width:100%;height:350px;"></div>
+
+
 
     </body>
 </html>
