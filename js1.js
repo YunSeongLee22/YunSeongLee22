@@ -55,7 +55,7 @@
             window.open("https://www.youtube.com/user/chelseafc");       
         }
         function sc(){
-            window.open("https://medea.tv/index.php?device=pc");        
+            window.open("http://yjtv365.com/");        
         }
         function folder(){
             window.open("C:/Users/user/Desktop/YS");      
