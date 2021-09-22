@@ -1,3 +1,5 @@
+
+  
 <html>
     <head>
         <style>
@@ -9,17 +11,19 @@
             html, body{
 			width : 100%;
 			height : 100%;
-			margin : 0;
+			margin : 0%;
 			padding : 0;
 			border : none;
 		}
         .border-none {
     border : none;
-    background : white;
+    background : black;
+    color : white;
                 }
         .f1
         {font-family : 'Bradley Hand ITC';
-         font-size : 30px;}
+         font-size : 30px;
+         color : white;}
 
             </style>
         <title>
@@ -35,7 +39,7 @@
    
     <body background="https://64.media.tumblr.com/36ff36756d0b6c04afa44d823a58998d/8123d0a15f39ad07-7a/s1280x1920/8eb7fe7f74b57522ff2b4bdf22407235374a873f.jpg">
       
-    <button onclick ="menu1()" id="top">🍴</button>
+    <button onclick ="menu1()" >🍴</button>
     <button onclick ="coffee()">☕</button>
     <button onclick ="luck()">🙏</button>
     <br>
@@ -46,12 +50,12 @@
     <button onclick ="naver()">네이버</button>
     <button onclick ="chelsea()">첼시</button>
     <button onclick ="sc()">축구무료보기</button>
-    
+    <button onclick ="mg()">💲</button>
    
     <div >
     
 
-    <table align="left" border="1">
+    <table style="position:sticky; top:100px; left:15px;" align="" border="2">
         <caption><h1>#참고자료</h1></caption>
         <tr>
             <td align="center" bgcolor="white">
@@ -164,30 +168,39 @@
                 ★★☆☆☆
             </td>
         </tr>
-        <tr>
-            <td>
-                추가예정 ...
+        <tr class="h9">
+            <td class="a9">
+               텐동🍤
             </td>
-            <td>
-                추가예정 ...
+            <td class="a9">
+                700~800Kcal
             </td>
-            <td>
-                추가예정 ...0
+            <td class="b9">
+                ★X100
 
             </td>
+        </tr>
+        <tr align="center">
+            <td colspan="3"> 
+                <a  href="https://yunseonglee22.github.io/YunSeongLee22/tastevillage.html">😋🍽🍴</a>
+            </td>
+            
         </tr>
     </table>
 
     
 </div>
-<table border="0" align="center">
+<table style="position:fixed; top:40px; left:500px; background-color : black;" border="1" align="" >
     <caption><h1>음악</h1></caption>
-    <tr ><td rowspan="15" ><iframe style="width: 37vw; height:35vw; left: calc(50% - 40vw)"
-        src="https://www.youtube.com/embed/iDjQSdN_ig8?autoplay=0&mute=1"
+    <tr ><td rowspan="13"><iframe style="width: 30vw; height:35vw; left:calc(50%-40vw)"
+        src="https://www.youtube.com/embed/Amq-qlqbjYA?autoplay=0&mute=1"
          frameborder="0" allow="accelerometer;  
          encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe></td></tr>
-        <tr><td> <p align="center" class="f1">Play List</p></td></tr>
+        <tr><td> <p align="center" class="f1"><b>Play List</b></p></td></tr>
+        <tr><td><button type="button" class="border-none"
+        
+            link="Amq-qlqbjYA" onclick="music_refresh(this)" />BALCK PINK - 마지막처럼  </button></td></tr>
     <tr><td><button type="button" class="border-none"
         
         link="AtZkqi_Hja0" onclick="music_refresh(this)" />NCT 127 - 다시 만나는날</button></td></tr>
@@ -270,11 +283,13 @@
 
 <div style="position:fixed; bottom : 5px; right:5px ;font-size : 30px">
 <a href="#top"><img style ="width:50px; height:50px;" src="https://vignette.wikia.nocookie.net/leagueoflegends/images/d/dd/Rammus_Render.png"></a></div>
+</div>
 
-<!-- 지도를 표시할 div 입니다 -->
-<div id="map" style="width:100%;height:350px;"></div>
+
+
 
 
 
     </body>
 </html>
+
