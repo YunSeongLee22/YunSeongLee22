@@ -1,12 +1,24 @@
 
+ //https://necronomicon-release.netlify.app/
+ function music_refresh(obj) {
+    document.querySelector("iframe").src = `https://www.youtube.com/embed/${obj.attributes[2].nodeValue}`
+    console.clear()
+}
+
+       function km(){
+        window.open("https://map.kakao.com/");
+       } 
+      
        function menu1(){
         var menu=["짜장면","마라탕","돈가스","김치찌개","회덮밥","초밥"
         ,"피자","헴버거","파스타","치킨","굶기ㅋㅋ!","서브웨이","샐러드","칼국수"
         ,"쌈밥","씨리얼","야채랑밥이랑비벼먹기","삼각김밥","라면","치킨","텐동"]
         var menuNum= Math.floor(Math.random()*menu.length);
  
-        alert(menu[menuNum]);
-        }
+        alert(menu[menuNum])
+        km();
+        
+       }
  
         function coffee(){
         var menu1=["아메리카노","더치","카페라떼","카푸치노","카페모카"
@@ -24,34 +36,39 @@
             
         }
         function yt(){
-            location.href="https://www.youtube.com/?hl=KO"           
+            window.open("https://www.youtube.com/?hl=KO");
         }
         function lol(){
-            location.href="https://www.op.gg/"           
+            var url = "https://www.op.gg/";          
+            window.open(url); 
         }
         
         function google(){
-            location.href="https://www.google.co.kr/"           
+            window.open("https://www.google.co.kr/");
         }
  
         function naver(){
-            location.href="https://www.naver.com/"           
+            window.open("https://www.naver.com/");
         }
  
         function chelsea(){
-            location.href="https://www.youtube.com/user/chelseafc"           
+            window.open("https://www.youtube.com/user/chelseafc");       
         }
         function sc(){
-            location.href="https://medea.tv/index.php?device=pc"           
+            window.open("https://medea.tv/index.php?device=pc");        
         }
         function folder(){
-            location.href="C:/Users/user/Desktop/YS"           
+            window.open("C:/Users/user/Desktop/YS");      
         }
  
         function maple(){
-            location.href="C:/Users/user/Desktop/GameLauncher.exe"           
+            window.open("C:/Users/user/Desktop/GameLauncher.exe");        
         }
  
+        function mg(){
+            window.open("https://mgyo.tistory.com/");        
+        }
+
         $(function(){
          $(".h").hover
          (function()
@@ -218,9 +235,23 @@
              $(".b8").css({ "background" : "none","color" : "black"});
             });
         });
- 
-        //https://necronomicon-release.netlify.app/
-        function music_refresh(obj) {
-     document.querySelector("iframe").src = `https://www.youtube.com/embed/${obj.attributes[2].nodeValue}`
-     console.clear()
- }
+        $(function(){
+            $(".h9").hover
+            (function()
+               {
+                $(".a9").css({"background" : "rgb(8,81,144)"});   
+               }, function() {
+                $(".a9").css({"background" : "none"});   
+               });
+           });
+           $(function(){
+            $(".h9").hover
+            (function()
+               {
+                $(".b9").css({ "background" : "rgb(8,81,144)" , "color" : "yellow"});
+               }, function(){
+                $(".b9").css({ "background" : "none","color" : "black"});
+               });
+           });
+    
+       
