@@ -69,13 +69,41 @@
             window.open("https://mgyo.tistory.com/");        
         }
 
+        function y1(){
+            window.open("https://www.youtube.com/playlist?list=PLudlrlRL10KZbF8I2Jt_uqAguSd_os5tT");        
+        }
+
+        function y2(){
+            window.open("https://www.youtube.com/playlist?list=PLudlrlRL10KZy_L1lBEfmf-_WcPy5koBG");        
+        }
+
+        function y3(){
+            window.open("https://www.youtube.com/playlist?list=PLudlrlRL10KbcI6b-zBw-Z5vFkC_CTlbQ");        
+        }
+
+        function y4(){
+            window.open("https://youtube.com/playlist?list=PL96Bh_rDllFkqpGNdwYfsoCZJWo9eWEry");        
+        }
+
+        function mg(){
+            window.open("https://mgyo.tistory.com/");        
+        }
+
+        function btc(){
+            window.open("https://upbit.com/");        
+        }
+
+        function yg(){
+            window.open("https://ddr4869.github.io/");        
+        }
+
         $(function(){
-         $(".h").hover
+         $("#h").hover
          (function()
             {
-             $(".a").css({"background" : "rgb(8,81,144)" });   
+             $("#a").css({"background" : "rgb(8,81,144)" });   
             }, function() {
-             $(".a").css({"background" : "none"});   
+             $("#a").css({"background" : "none"});   
             }, 
         );
      });
