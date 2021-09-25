@@ -1,4 +1,5 @@
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 넣으시면 됩니다."></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1b8fc4579a1a928991b2e5589e1c8f2d
+"></script>
 	
 		var container = document.getElementById('map');
 		var options = {
